@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "KLD";
+  default: true;
+  prefersdark: false;
+  color-scheme: "light";
+  --color-base-100: #FFFAFA;
+  --color-base-200: #fcfbfc;
+  --color-base-300: #F3F2ED;
+  --color-base-content: #0C0404;
+  --color-primary: #00703C;
+  --color-primary-content: #FFFAFA;
+  --color-secondary: #FC4C02;
+  --color-secondary-content: #FFFAFA;
+  --color-accent: #FFC87C;
+  --color-accent-content: #0c0404;
+  --color-neutral: #0C0404;
+  --color-neutral-content: #FFFAFA;
+  --color-info: #A1CAF1;
+  --color-info-content: #FCFBFC;
+  --color-success: #008000;
+  --color-success-content: #fcfbfc;
+  --color-warning: #FFBF00;
+  --color-warning-content: #0c0404;
+  --color-error: #F00800;
+  --color-error-content: #0c0404;
+  --radius-selector: 2rem;
+  --radius-field: 1rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 0;
+};
+
+
+
+@plugin "daisyui/theme" {
+  name: "KLD-Dark";
+  default: false;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: #1F2022;
+  --color-base-200: #0c0404;
+  --color-base-300: #2A3439;
+  --color-base-content: #fcfbfc;
+  --color-primary: #00703C;
+  --color-primary-content: #FFFAFA;
+  --color-secondary: #FC4C02;
+  --color-secondary-content: #0C0404;
+  --color-accent: #FFC87C;
+  --color-accent-content: #0C0404;
+  --color-neutral: #fcfbfc;
+  --color-neutral-content: #0c0404;
+  --color-info: #A1CAF1;
+  --color-info-content: #0c0404;
+  --color-success: #008000;
+  --color-success-content: #0c0404;
+  --color-warning: #FFBF00;
+  --color-warning-content: #fcfbfc;
+  --color-error: #F00800;
+  --color-error-content: #fcfbfc;
+  --radius-selector: 2rem;
+  --radius-field: 1rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.21875rem;
+  --size-field: 0.25rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 1;
+};
+
+@plugin "daisyui" {
+  themes: KLD --default, KLD-Dark --prefersdark;
+};
+
+ 
+ @source "../../app/Views/**/*.php";
