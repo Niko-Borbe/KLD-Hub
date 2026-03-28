@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to CodeIgniter 4!</title>
-    <meta name="description" content="The small framework with powerful features">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/output.css" type="text/css" media="all" />
-</head>
-<body>
+<?= $this->extend('Layouts/main') ?>
+
+
+<?= $this->section('content') ?>
+
+
+
 <div class="hero bg-secondary min-h-screen">
   <div class="hero-content text-center">
     <div class="max-w-md">
@@ -21,5 +17,6 @@
     </div>
   </div>
 </div>
-</body>
-</html>
+
+
+<?= $this->endSection() ?>
